@@ -56,11 +56,11 @@ func (h *handler) welcome(c echo.Context) error {
 func (h *handler) list(c echo.Context) error {
 	conn := h.mongo.Copy()
 	defer conn.Close()
-	var ts []phonebook
-	if err := conn.DB(h.db).C(h.col).Find(nil).All(&ts); err != nil {
+	var t []phonebook
+	if err := conn.DB(h.db).C(h.col).Find(nil).All(&t); err != nil {
 		return err
 	}
-	c.JSON(http.StatusOK, ts)
+	c.JSON(http.StatusOK, t)
 	return nil
 }
 
