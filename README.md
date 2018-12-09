@@ -1,7 +1,7 @@
 # phonebook
 For practicing golang
 
-Instruction
+Instructions
 
 1. Clone project.
   ```git clone https://github.com/pbunluesin/phonebook_api.git```
@@ -58,5 +58,5 @@ go get -u github.com/labstack/echo/middleware
 ```
 5.5 Delete guest by specific name (Method: DELETE)
   
-    localhost:1324/api/delete/Phatthara```
+    localhost:1324/api/delete/Phatthara
 
