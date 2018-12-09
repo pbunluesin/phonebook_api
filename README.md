@@ -21,11 +21,11 @@ go get -u github.com/labstack/echo/middleware
 
 5. Test call api
 
-  5.1 List all guests in phonebook 
+5.1 List all guests in phonebook (Method: GET)
   
     http://localhost:1324/api/list
 
-  5.2 Add guest to phonebook
+5.2 Add guest to phonebook
     
     localhost:1324/api/insert
       {
@@ -37,11 +37,11 @@ go get -u github.com/labstack/echo/middleware
       }
 
 
-  5.3 Search guest by specific name
+5.3 Search guest by specific name (Method: Get)
 
     http://localhost:1324/api/search/Phatthara
 
-  5.4 Update guest by specific name
+5.4 Update guest by specific name (Method: PUT)
 ```
   PUT /api/update/Phatthara HTTP/1.1
   Host: localhost:1324
@@ -56,7 +56,7 @@ go get -u github.com/labstack/echo/middleware
           "address": "Bangkok"
       }------WebKitFormBoundary7MA4YWxkTrZu0gW--
 ```
-  5.5Delete guest by specific name
+5.5 Delete guest by specific name (Method: DELETE)
   
-    ```localhost:1324/api/delete/Phatthara```
+    localhost:1324/api/delete/Phatthara```
 
