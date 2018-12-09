@@ -25,7 +25,7 @@ go get -u github.com/labstack/echo/middleware
   
     http://localhost:1324/api/list
 
-5.2 Add guest to phonebook
+5.2 Add guest to phonebook (Method: POST)
     
     localhost:1324/api/insert
       {
